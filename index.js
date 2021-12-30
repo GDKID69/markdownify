@@ -111,7 +111,7 @@ function markdownFlood(_args) {
             0: 0.8,
         });
 
-        if (again === 1) {
+        if (again == 1) {
             action = actionsList[Math.floor(Math.random() * actionsList.length)];
             while (action == poppedAction) poppedAction = action = actionsList[Math.floor(Math.random() * actionsList.length)];
 
