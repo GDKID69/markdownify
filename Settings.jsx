@@ -5,7 +5,7 @@ module.exports = class MarkdownifySettings extends React.PureComponent {
     render() {
         return(
             <div className="markdownifySettings">
-                <div className="description-3_Ncsb formText-3fs7AJ marginBottom20-32qID7 modeDefault-3a2Ph1 primary-jw0I4K">
+                <div className="description-30xx7u formText-2ngGjI marginBottom20-315RVT modeDefault-2fEh7a">
                     Flood your messages with unnnecessary markdown!
                 </div>
                 <div className="markdownifySettingsMainContainer">
@@ -17,7 +17,7 @@ module.exports = class MarkdownifySettings extends React.PureComponent {
                         }}>
                         Toggle Markdownification
                     </SwitchItem>
-                    <div className="description-3_Ncsb formText-3fs7AJ marginBottom20-32qID7 modeDefault-3a2Ph1 primary-jw0I4K">
+                    <div className="description-30xx7u formText-2ngGjI marginBottom20-315RVT modeDefault-2fEh7a">
                         Auto-markdownifies your messages so that you don't need to run the command every time
                     </div>
                 </div>
