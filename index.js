@@ -53,7 +53,7 @@ function markdownFlood(text) {
             0: 0.6,
         });
 
-        if (code == 1)  groupList[index] = group = codeblockify(group);
+        if (code == 1) groupList[index] = group = codeblockify(group);
 
         action = actionsList[Math.floor(Math.random() * actionsList.length)];
         while (action == poppedAction) poppedAction = action = actionsList[Math.floor(Math.random() * actionsList.length)];
