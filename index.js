@@ -8,6 +8,16 @@ const underline = arg => { return `__${arg}__`;};
 
 const codeblockify = arg => { return `\`${arg}\``;};
 
+function betterRandom(probabilities) {
+    let i,
+        sum = 0,
+        r = Math.random();
+    for (i in probabilities) {
+        sum += probabilities[i];
+        if (r <= sum) return i;
+    }
+};
+
 function shuffle(arg) {
     const groups = [];
     while (!arg == "") {
@@ -20,16 +30,6 @@ function shuffle(arg) {
     }
 
     return groups;
-};
-
-function betterRandom(probabilities) {
-    let i,
-        sum = 0,
-        r = Math.random();
-    for (i in probabilities) {
-        sum += probabilities[i];
-        if (r <= sum) return i;
-    }
 };
 
 function markdownFlood(text) {
